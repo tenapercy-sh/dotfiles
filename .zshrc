@@ -35,5 +35,3 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 [[ ! -f $SPRING_DIRECTORY/spring-cli/init.sh ]] || source $SPRING_DIRECTORY/spring-cli/init.sh
 
-source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
