@@ -10,7 +10,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,3 +34,6 @@ if [ -f ~/.env_vars ]; then source ~/.env_vars; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 [[ ! -f $SPRING_DIRECTORY/spring-cli/init.sh ]] || source $SPRING_DIRECTORY/spring-cli/init.sh
+
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
