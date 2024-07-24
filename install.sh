@@ -29,7 +29,9 @@ ln -sf $DOTFILES/ignore $HOME/.config/git/ignore
 # Set zsh as the default shell
 sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
 
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+export ZSH="$HOME/.oh-my-zsh"
 
 echo "Dotfile setup complete."
