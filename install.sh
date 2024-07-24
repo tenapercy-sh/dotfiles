@@ -1,9 +1,6 @@
 #!/bin/bash
 
 echo "Beginning setting up Dotfiles..."
-# Update package list and install zsh and neovim
-sudo apt update && sudo apt install -y zsh nodejs npm
-
 
 # Symlink various dotfiles to home directory
 create_symlinks() {
@@ -34,7 +31,5 @@ sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
 
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-cat .zshrc > $HOME/.zshrc
 
 echo "Dotfile setup complete."
