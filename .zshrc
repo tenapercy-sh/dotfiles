@@ -14,8 +14,6 @@ plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export GITHUB_SPRINGCARE_TOKEN=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
 export PATH="/opt/homebrew/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
