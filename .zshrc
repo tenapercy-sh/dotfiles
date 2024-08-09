@@ -5,7 +5,7 @@ ZSH_THEME="miloshadzic"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-export $GITHUB_SPRINGCARE_TOKEN=${GH_TOKEN}
+export GITHUB_SPRINGCARE_TOKEN=${GH_TOKEN}
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
