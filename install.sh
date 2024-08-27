@@ -39,6 +39,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 export ZSH="$HOME/.oh-my-zsh"
-export GITHUB_SPRINGCARE_TOKEN=$GH_SPRINGCARE_TOKEN
+export GITHUB_SPRINGCARE_TOKEN="$GH_SPRINGCARE_TOKEN"
 
 echo "Dotfile setup complete."
